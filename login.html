@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Premium Consulting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .login-container {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .login-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .login-form h2 {
+            color: #30344E;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .login-btn {
+            background: #4C40F7;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 5px;
+            width: 100%;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: #3930c9;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin: 1rem 0;
+        }
+
+        .forgot-password a {
+            color: #4C40F7;
+            text-decoration: none;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .register-link a {
+            color: #4C40F7;
+            text-decoration: none;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-container img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .login-form {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="login-form">
+                        <div class="logo-container">
+                            <img src="images/logo.png" alt="Logo" class="img-fluid">
+                        </div>
+                        <h2 class="fw-bold">Welcome Back</h2>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control form-control-lg" placeholder="Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control form-control-lg" placeholder="Password" required>
+                            </div>
+                            <div class="forgot-password">
+                                <a href="#" class="text-decoration-none">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn login-btn btn-lg">Login</button>
+                            <div class="register-link">
+                                Don't have an account? <a href="#" class="fw-bold">Register</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
