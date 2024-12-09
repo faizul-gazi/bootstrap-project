@@ -2,14 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "src/**/*.{js,jsx,ts,tsx}",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "outputDirectory": "dist"
 } 
